@@ -1,0 +1,68 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+$white:#ffffff;
+$red:#fc5055;
+$black:#000000;
+$blue:#003790;
+$gray:#c4c4c4;
+html{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+%fz15_cb{
+    font-size: 15px;
+    color: $black;
+    line-height: 100.023%; /* 15.003px */
+    letter-spacing: 0.75px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+%btn_standart{
+    border-radius: 10px;
+    background: #003790;
+    text-align: center;
+    padding: 13px 40px ;
+    color: $white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+header{
+    position:fixed;
+    background-color: $white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    padding: 1% 10%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1366px;
+        margin: 0 auto; 
+        .middle_nav{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @extend %fz15_cb;
+        }
+        a{
+            margin: 0 3%;
+        }
+        
+        img{
+            width: 150px;
+        }
+        .btn_standart{
+            @extend %btn_standart;
+        }
+    }
+    
+}
