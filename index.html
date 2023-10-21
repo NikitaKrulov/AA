@@ -9,17 +9,21 @@
 <body>
     <header>
         <nav>
-            <a href=""><img src="/Media/img/Новый проект.png" alt="logo"></a>
+            <a href="#main"><img src="/Media/img/Новый проект.png" alt="logo"></a>
             <div class="middle_nav">
                 <a href="#about_us">о нас</a>
                 <a href="/">курсы</a>
                 <a href="/">контакты</a>
+                <a href="#" class="btn_standart_burger">вход</a>
             </div>
             <a href="#" class="btn_standart">вход</a>
+            <div class="menu_icon" onclick="выполнитьДействие()">
+                &#9776; <!-- Это Unicode символ для "бургера" (троеточия) -->
+            </div>            
         </nav>
     </header>
     <main>
-        <section class="main_screen">   
+        <section class="main_screen" id="main">   
             <video width="640" height="360" autoplay loop muted id="background-video">
                 <source src="/Media/video/vecteezy_animated-gradient-motion-background-with-purple-pink-color_27618300_312.mp4" type="video/mp4">
             </video>
@@ -67,8 +71,6 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, impedit?</p>
                     </div>
                 </a>
-            </div>
-            <div class="courses-container">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                     <div class="cours_card">
                         <img src="/Media/img/загрузка.png" alt="">
@@ -95,36 +97,83 @@
         <div class="line"></div>
         <section class="news">
             <h2>Новости университета</h2>
-            <div class="news-container">
-                <a href="">
-                    <div class="news-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
-                        <div class="news_crad-container">
-                            <p>14.10.2023</p>
-                            <img src="/Media/img/logo.png" alt="logo">
+            <div class="slider-container">
+                <div class="slider">
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="news-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
-                        <div class="news_crad-container">
-                            <p>14.10.2023</p>
-                            <img src="/Media/img/logo.png" alt="logo">
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="news-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
-                        <div class="news_crad-container">
-                            <p>14.10.2023</p>
-                            <img src="/Media/img/logo.png" alt="logo">
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card">
+                            <div class="news-card">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptates ipsum repellendus itaque corrupti! Illum numquam fuga hic et molestias.</p>
+                                <div class="news_crad-container">
+                                    <p>14.10.2023</p>
+                                    <img src="/Media/img/logo.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </a>     
+                </div>
             </div>
-            <a class="all_news" href="">все новости </a>
+            <div class="arrows">
+                <button id="prev">
+                </button>
+                <a class="all_news" href="">все новости </a>
+                <button id="next">
+                </button>
+            </div>
         </section>
     </main>
     <footer>
@@ -177,5 +226,6 @@
             </div>
         </div>
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
