@@ -9,7 +9,6 @@ p {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-weight: 400;
   line-height: 140%; /* 21px */
   letter-spacing: 0.75px;
 }
@@ -96,101 +95,211 @@ header nav .btn_standart:hover {
 }
 /*-------------main-------------*/
 main {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  line-height: 220%;
+  color: #ffffff;
 }
-main .main_container {
-  padding: 100px 0 0;
-  justify-content: center;
-  margin: 0 auto;
-  background-color: #ffffff;
-  display: flex;
-  flex-grow: 0; /* default 0 */
-  flex-wrap: wrap;
-}
-main .main_container h2 {
-  margin: 60px 0 30px;
-  font-weight: 600;
-  font-size: 40px;
-}
-main .main_container a {
-  margin: 10px 0;
-  font-weight: 400;
-  font-size: calc(5px + 0.78125vw);
-}
-main .main_container p {
-  margin: 10px 0;
-  font-weight: 500;
-  font-size: calc(5px + 0.78125vw);
-}
-main .main_container .main_content {
-  flex-grow: 1;
-  padding: 0 60px;
-}
-main .main_container .main_content .line_horizontal {
-  margin: 10px auto;
+main .main_header {
+  background-image: url(/Media/img/bg.png);
+  background-size: cover;
   width: 100%;
-  height: 1px;
-  background-color: #c4c4c4;
+  height: 388px;
+  padding: 100px 20px 0;
 }
-main .main_container .main_content .line_vertical {
-  margin: auto 0;
-  width: 1px;
-  height: 9em;
-  background-color: #c4c4c4;
-}
-main .main_container .main_content_map {
-  flex-grow: 1;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-main .main_container .main_content_map iframe {
-  filter: grayscale(0.5);
-  min-height: 400px;
+main .main_header-content {
+  max-width: 1366px;
   height: 100%;
-  width: 100%;
-  min-width: 700px;
-}
-@media (max-width: 700px) {
-  main .main_container .main_content_map iframe {
-    width: 10px;
-  }
-}
-main .main_container .tel {
+  margin: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-main .main_container .learn {
-  line-height: 20px;
-  text-align: center;
-  margin: 20px 250px;
+main .main_header-content p {
+  margin: 0;
 }
-main .main_container .rec_tech {
+main .main_header-content h1 {
+  margin: 40px 0 20px;
+  font-size: 40px;
+}
+main .main_header-content button {
+  margin: 40px 0;
+  color: #ffffff;
   text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  width: 220px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+main .main_header-content button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+main .main_content {
+  padding: 20px;
+  color: #000000;
   display: flex;
-  justify-content: space-between;
+  max-width: 1366px;
+  margin: 0 auto;
+  justify-content: center;
 }
-main .main_container .adress {
-  text-align: center;
+@media (max-width: 425px) {
+  main .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-main .main_container .adress p {
+main .left {
+  font-size: 10px;
+  flex: 1;
+}
+main .left .left_text {
+  margin: 10px 0;
+}
+main .left p {
+  margin: 3px;
+}
+@media (max-width: 425px) {
+  main .left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+main .right {
+  flex: 4;
+}
+main .right h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+main .right p {
+  max-width: 80%;
   margin: 20px 0;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 0.75px;
+}
+@media (max-width: 425px) {
+  main .right p {
+    max-width: 100%;
+  }
+}
+main .right ul {
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 0.75px;
+}
+main .right ul li {
+  margin: 0;
+}
+@media (max-width: 425px) {
+  main .right {
+    width: 100%;
+  }
+}
+main .main_teachers {
+  overflow: hidden;
+  color: #000000;
+  background-color: #ffffff;
+  width: 100%;
+}
+main .main_teachers-content {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 30px;
+}
+main .main_teachers-content h2 {
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100.023%; /* 40.009px */
+  letter-spacing: 2px;
+}
+@media (max-width: 425px) {
+  main .main_teachers-content h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+main .main_teachers-content .people_cards {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+main .main_teachers-content .card {
+  text-align: center;
+  margin: 0 30px;
+  flex: 1;
+}
+main .main_teachers-content .card img {
+  width: 100%;
+}
+main .main_teachers-content .card .text {
+  width: 80%;
+  margin: 0 auto;
+}
+main .main_teachers-content .card h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 425px) {
+  main .main_teachers-content .card h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+main .main_teachers-content .card p {
+  font-size: 10px;
+  font-style: normal;
   font-weight: 400;
 }
-main .main_container .adress span {
-  font-weight: 500;
+main .main_teachers-content .arrows {
+  text-align: right;
+}
+@media (max-width: 425px) {
+  main .main_teachers-content .arrows img {
+    display: none;
+  }
+}
+main .main_teachers-content .arrows .right {
+  margin: 0 15px;
+  transform: rotate(180deg) translateY(-0.5px);
+  transition: all 0.3s;
+}
+main .main_teachers-content .arrows .right:hover {
+  filter: invert(80%);
+}
+main .main_teachers-content .arrows .left {
+  transition: all 0.3s;
+}
+main .main_teachers-content .arrows .left:hover {
+  filter: invert(80%);
 }
 
 /*------------footer------------*/
 footer {
-  top: 0;
+  margin: 50px 0 0;
+  bottom: 0;
   left: 0;
-  margin: 0;
   background-color: #003790;
   color: #ffffff;
 }
@@ -219,7 +328,7 @@ footer a {
 
 .footer-content {
   padding: 0 180px;
-  margin: 20px 0;
+  margin: 0 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -233,6 +342,7 @@ footer a {
   .footer-content {
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -240,6 +350,7 @@ footer a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer-contnent_social .footer-contnent_social-content {
   margin: 0 30px;
@@ -262,6 +373,9 @@ footer a {
 @media (max-width: 727px) {
   .tel-container {
     justify-content: center;
+  }
+  .tel-container .tel {
+    margin: 0;
   }
 }
 
