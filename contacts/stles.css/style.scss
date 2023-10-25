@@ -105,6 +105,7 @@ main{
     display: flex;
     justify-content: center;
     margin: 0;
+    line-height: 220%;
     .main_container{
         padding: 100px 0 0 ;
         justify-content: center;
@@ -112,11 +113,12 @@ main{
         background-color: #ffffff;
         display: flex;
         flex-grow: 0; /* default 0 */
+
         flex-wrap: wrap;
         h2{
             margin: 60px 0 30px;
             font-weight: 600;
-            font-size: calc(10px + 20 * (100vw / 1280));
+            font-size: 40px
         }
         a{
             margin: 10px 0;

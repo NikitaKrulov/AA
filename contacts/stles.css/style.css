@@ -101,6 +101,7 @@ main {
   display: flex;
   justify-content: center;
   margin: 0;
+  line-height: 220%;
 }
 main .main_container {
   padding: 100px 0 0;
@@ -114,7 +115,7 @@ main .main_container {
 main .main_container h2 {
   margin: 60px 0 30px;
   font-weight: 600;
-  font-size: calc(10px + 1.5625vw);
+  font-size: 40px;
 }
 main .main_container a {
   margin: 10px 0;
